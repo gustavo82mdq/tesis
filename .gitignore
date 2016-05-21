@@ -1,0 +1,12 @@
+#workspace
+.metadata
+
+#eclipse 
+**/*.settings/
+**/*.classpath
+**/*.project
+**/*~
+**/*~
+
+#maven
+target/
