@@ -2,5 +2,8 @@
 
     <string name="app_name">Client</string>
 	<string name="btn_connect">Connect</string>
+	<string name="server_settings_title">SERVER</string>
+	<string name="pref_server_host_title">Host/IP</string>
+	<string name="pref_server_port_title">Port</string>
 
 </resources>
