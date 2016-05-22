@@ -33,6 +33,6 @@
   
   <modules>
   	<module>../Client</module>
-  	<module>../ServerJava</module>
+  	<module>../Server</module>
   </modules>
 </project>
