@@ -1,5 +1,6 @@
 #workspace
 .metadata
+.recommenders
 
 #eclipse 
 **/*.settings/
