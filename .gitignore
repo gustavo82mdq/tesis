@@ -1,6 +1,7 @@
 #workspace
 .metadata
 .recommenders
+appcompat_v7/
 
 #eclipse 
 **/*.settings/

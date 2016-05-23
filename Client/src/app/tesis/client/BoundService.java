@@ -1,14 +1,16 @@
 package app.tesis.client;
 
-import android.app.Service;
-import android.content.Intent;
-import android.os.Binder;
-import android.os.Build;
-import android.os.IBinder;
-
 import java.io.IOException;
 import java.net.Socket;
 
+import android.app.Service;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Binder;
+import android.os.Build;
+import android.os.IBinder;
+import android.preference.PreferenceManager;
 import app.tesis.commons.ClientThread;
 import app.tesis.commons.Dispatcher;
 import app.tesis.commons.Event;
@@ -19,18 +21,36 @@ public class BoundService extends Service {
     private final IBinder myBinder = new MyLocalBinder();
     private Socket socket;
     private ClientThread client_thread;
+	private SharedPreferences sharedPref;
+	private Context context;
 
     public BoundService() {
+    	super();
     }
+    
+    public void setContext(Context context) {
+		this.context = context;
+	}
 
-    @Override
+	@Override
     public IBinder onBind(Intent intent) {
         return myBinder;
     }
 
     public void start() {
+    	if (context == null) {
+    		return;
+    	}
+    	sharedPref = PreferenceManager.getDefaultSharedPreferences(this.context);
         try {
-            this.socket = new Socket("192.168.1.2", 5432);
+            this.socket = new Socket(
+            		sharedPref.getString(
+            				this.context.getResources().getString(R.string.pref_server_host_key),
+            				this.context.getResources().getString(R.string.pref_server_host_default)),
+            		Integer.valueOf(sharedPref.getString(
+            				this.context.getResources().getString(R.string.pref_server_port_key),
+            				this.context.getResources().getString(R.string.pref_server_port_default)))
+            		);
             this.client_thread = new ClientThread(this.socket);
             this.client_thread.start();
             Dispatcher.onEvent("receiveMessage", this, "processMessage", 5);
