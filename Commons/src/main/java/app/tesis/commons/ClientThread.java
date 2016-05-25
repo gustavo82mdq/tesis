@@ -18,7 +18,7 @@ public class ClientThread extends Thread{
 		this.socket = client;
 		
 		try {
-			this.output = new ObjectOutputStream(new FileOutputStream("out.out"));
+			this.output = new ObjectOutputStream(socket.getOutputStream());
 			this.input = new ObjectInputStream(socket.getInputStream());
 		} catch (IOException e) {
 			e.printStackTrace();
