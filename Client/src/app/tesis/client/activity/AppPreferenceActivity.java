@@ -1,8 +1,9 @@
-package app.tesis.client;
+package app.tesis.client.activity;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
+import app.tesis.client.R;
 
 public class AppPreferenceActivity extends PreferenceActivity {
 

@@ -1,4 +1,4 @@
-package app.tesis.client;
+package app.tesis.client.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -14,7 +14,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import app.tesis.client.BoundService.MyLocalBinder;
+import app.tesis.client.R;
+import app.tesis.client.service.BoundService;
+import app.tesis.client.service.BoundService.MyLocalBinder;
 
 public class MainActivity extends Activity {
 

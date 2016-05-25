@@ -11,11 +11,22 @@
             android:title="@string/pref_server_host_title" >
         </EditTextPreference>
         <EditTextPreference
-            android:defaultValue="@string/pref_server_port_default"
+            android:defaultValue="@integer/pref_server_port_default"
             android:inputType="number"
             android:key="@string/pref_server_port_key"
             android:summary="Please provide server port"
             android:title="@string/pref_server_port_title" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_pool"
+        android:title="@string/pool_settings_title" >
+        <EditTextPreference
+            android:defaultValue="@integer/pref_pool_size_default"
+            android:inputType="number"
+            android:key="@string/pref_pool_size_key"
+            android:summary="Please provide pool size"
+            android:title="@string/pref_pool_size_title" >
         </EditTextPreference>
     </PreferenceCategory>
 

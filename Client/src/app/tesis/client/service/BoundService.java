@@ -1,4 +1,4 @@
-package app.tesis.client;
+package app.tesis.client.service;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -11,6 +11,7 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
+import app.tesis.client.R;
 import app.tesis.commons.ClientThread;
 import app.tesis.commons.Dispatcher;
 import app.tesis.commons.Event;
@@ -47,9 +48,9 @@ public class BoundService extends Service {
             		sharedPref.getString(
             				this.context.getResources().getString(R.string.pref_server_host_key),
             				this.context.getResources().getString(R.string.pref_server_host_default)),
-            		Integer.valueOf(sharedPref.getString(
+            		sharedPref.getInt(
             				this.context.getResources().getString(R.string.pref_server_port_key),
-            				this.context.getResources().getString(R.string.pref_server_port_default)))
+            				this.context.getResources().getInteger(R.integer.pref_server_port_default))
             		);
             this.client_thread = new ClientThread(this.socket);
             this.client_thread.start();
@@ -61,7 +62,7 @@ public class BoundService extends Service {
     }
 
     public class MyLocalBinder extends Binder {
-        BoundService getService() {
+        public BoundService getService() {
             return BoundService.this;
         }
     }
