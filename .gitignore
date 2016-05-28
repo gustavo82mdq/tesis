@@ -2,7 +2,6 @@
 .metadata
 .recommenders
 appcompat_v7
-Docs
 
 #eclipse 
 **/*.settings/

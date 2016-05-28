@@ -1,0 +1,6 @@
+- Benchmark (pag 7): se calcula cada vez o solo una vez? solo una vez
+
+- Arquitectura Client / Server
+	- ya recibimos las subtareas atomicas en el server?
+	- como se "reensambla" la info? -> (relacionado con Fig 1. pag 7)
+	- Comunicacion por mensajes: Nodo - Msj - Serializador - Msj - Server
