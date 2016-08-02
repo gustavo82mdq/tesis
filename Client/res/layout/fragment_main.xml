@@ -9,14 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="app.tesis.client.MainActivity" >
     
-    <Button
+    <ToggleButton
+        android:id="@+id/btnConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_connect"
-        android:id="@+id/btnConnect"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="connect" />
-    
+        android:checked="false"
+        android:onClick="toggleConnect"
+        android:text="@string/btn_connect"
+        android:textOn="@string/btn_disconnect"
+        android:textOff="@string/btn_connect" />
     
 </RelativeLayout>

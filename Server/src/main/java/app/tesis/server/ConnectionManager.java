@@ -5,6 +5,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import app.tesis.commons.ClientThread;
 import app.tesis.commons.Dispatcher;
 import app.tesis.commons.Event;
@@ -16,7 +20,7 @@ public class ConnectionManager {
 	private static ConnectionManager instance = new ConnectionManager();
 	private ServerSocket server_socket;
 	private HashMap<String, ClientThread> client_list;
-	
+
 	private ConnectionManager() {
 		try {
 			this.server_socket = new ServerSocket(Integer.valueOf("5432"));
@@ -34,9 +38,9 @@ public class ConnectionManager {
 	public static ConnectionManager getInstance() {
 		return instance;
 	}
-	
+
 	public void start() {
-		while (true){
+		while (true) {
 			try {
 				Socket client = this.server_socket.accept();
 				ClientThread client_thread = new ClientThread(client);
@@ -47,7 +51,7 @@ public class ConnectionManager {
 				}
 				this.client_list.put(macAddress.toString(), client_thread);
 				client_thread.start();
-				Message<Object> msg = new Message<Object>(Message.Type.REQ_DEVICE_SN, null);
+				Message<Object> msg = new Message<Object>(Message.Type.REQ_DEVICE_INFO, null);
 				client_thread.send(msg);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -55,17 +59,29 @@ public class ConnectionManager {
 			}
 		}
 	}
-	
+
 	public void processMessage(Event e) {
 		Message<?> m = (Message<?>) e.getParam("message");
-		
+
 		switch (m.getType()) {
-			case Type.RES_DEVICE_SN:
+		case Type.RES_DEVICE_INFO:
+			JSONParser parser = new JSONParser();
+			JSONObject obj;
+			try {
+				obj = (JSONObject) parser.parse((String) m.getContent());
 				ClientThread c = this.client_list.get(m.getAddress());
-				this.client_list.put((String)m.getContent(), c);
+				this.client_list.put(obj.get("serial").toString(), c);
 				this.client_list.remove(m.getAddress());
-				break;
+			} catch (ParseException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			break;
+		case Type.REQ_DEVICE_DISCONNECT:
+			ClientThread c = this.client_list.get(m.getAddress());
+			c.disconnect();
+			break;
 		}
-		
+
 	}
 }

@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ToggleButton;
 import app.tesis.client.R;
 import app.tesis.client.service.BoundService;
 import app.tesis.client.service.BoundService.MyLocalBinder;
@@ -55,8 +56,13 @@ public class MainActivity extends Activity {
         }
     };
 
-    public void connect(View view) {
-        service.start();
+    public void toggleConnect(View view) {
+    	if (!this.service.isConnected()) {
+    		service.start();
+    	} else {
+    		service.stop();
+    	}
+    	((ToggleButton) view).setChecked(this.service.isConnected());
     }
 
 	@Override

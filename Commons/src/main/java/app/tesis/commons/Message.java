@@ -10,8 +10,9 @@ public class Message<T> implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	public class Type {
-		public final static int REQ_DEVICE_SN = 1;
-		public final static int RES_DEVICE_SN = 2;
+		public final static int REQ_DEVICE_INFO = 1;
+		public final static int RES_DEVICE_INFO = 2;
+		public final static int REQ_DEVICE_DISCONNECT = 3;
 	}
 	
 	private Integer type;

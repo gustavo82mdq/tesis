@@ -4,17 +4,19 @@
     <string name="app_name">Client</string>
     <string name="action_settings">Settings</string>
     <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
     <string name="server_settings_title">SERVER</string>
     <string name="pool_settings_title">POOL</string>
     <string name="pref_server_host_title">Host/IP</string>
-    <string name="pref_server_port_title">Port</string>
-    <string name="pref_pool_size_title">Pool size</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_preference">PreferenceActivity</string>
-    <string name="title_activity_test">Test</string>
+    <string name="pref_server_host_summary">Please provide server host/IP</string>
     <string name="pref_server_host_key">pref_server_host</string>
     <string name="pref_server_host_default">127.0.0.1</string>
+    <string name="pref_server_port_title">Port</string>
     <string name="pref_server_port_key">pref_server_port</string>
+    <string name="pref_server_port_summary">Please provide server port</string>
+    <string name="pref_pool_size_title">Pool size</string>
     <string name="pref_pool_size_key">pref_pool_size</string>
-    
+	<string name="pref_pool_size_summary">Please provide pool size. Application restart is needed to take effect</string>    
 </resources>

@@ -1,6 +1,5 @@
 package app.tesis.commons;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -45,9 +44,9 @@ public class ClientThread extends Thread{
 	@Override
 	public void run() {
 		while (this.isConnected) {
-			Message data = null;
+			Message<?> data = null;
 			try {
-				data = (Message) this.input.readObject();
+				data = (Message<?>) this.input.readObject();
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -60,12 +59,16 @@ public class ClientThread extends Thread{
 		}
 	}
 	
-	public void send(Message msg) {
+	public void send(Message<?> msg) {
 		try {
 			this.output.writeObject(msg);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public boolean isConnected() {
+		return isConnected;
 	}
 }

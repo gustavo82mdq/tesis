@@ -30,6 +30,12 @@
 			<groupId>app.tesis</groupId>
 			<artifactId>Commons</artifactId>
 			<version>0.0.2-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest-core</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 
@@ -37,26 +43,29 @@
 		<sourceDirectory>${basedir}/src</sourceDirectory>
 		<plugins>
 			<plugin>
-				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<groupId>com.simpligility.maven.plugins</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>3.9.0-rc.1</version>
+				<version>4.0.0-rc.3</version>
 				<configuration>
 					<sdk>
-						<path>${user.home}/android-sdk-linux</path>
+						<path>${user.home}/Programas/android-sdk-linux</path>
 						<platform>21</platform>
 					</sdk>
 					<deleteConflictingFiles>true</deleteConflictingFiles>
 					<undeployBeforeDeploy>true</undeployBeforeDeploy>
+					<androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
+					<resourceDirectory>${project.basedir}/res</resourceDirectory>
+					<nativeLibrariesDirectory>${project.basedir}/libs</nativeLibrariesDirectory>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
