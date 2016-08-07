@@ -47,6 +47,8 @@ public class ClientThread extends Thread{
 			Message<?> data = null;
 			try {
 				data = (Message<?>) this.input.readObject();
+				if (data != null)
+					System.out.println(data.toString()); // TODO remove debug line 
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -54,7 +56,6 @@ public class ClientThread extends Thread{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println(data.toString()); // TODO remove debug line 
 			Dispatcher.fireEvent("receiveMessage", "message", data);
 		}
 	}

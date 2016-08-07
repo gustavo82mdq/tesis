@@ -79,7 +79,10 @@ public class ConnectionManager {
 			break;
 		case Type.REQ_DEVICE_DISCONNECT:
 			ClientThread c = this.client_list.get(m.getAddress());
-			c.disconnect();
+			if (c != null) {
+				c.disconnect();
+				this.client_list.remove(m.getAddress());
+			}
 			break;
 		}
 
