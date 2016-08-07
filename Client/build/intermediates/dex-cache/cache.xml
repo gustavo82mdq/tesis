@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/gus/StudioProjects/Client/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.3_d5f194ca5494d84a9d8eefee66e3a379947ed1e9/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/StudioProjects/Client/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c54afbd66e5101c85e03070c4003561e01b87812">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_da5b731d330c877b38bb081e3836f53d061a1c64/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/Programas/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.3_a261bbeffb4a82955c1551011889a07be81b9a77/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.10_3cc7866d7e0db31d671215b9f3e8695a61bd595c/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/app.tesis/Commons/0.0.2-SNAPSHOT/aece00afc70f97923c9711decb6b7fddcfe2a111/Commons-0.0.2-SNAPSHOT.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="aece00afc70f97923c9711decb6b7fddcfe2a111">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/Commons-0.0.2-SNAPSHOT_404a921469fed0193b5999bf332fb51b8678cdfb/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c9ad4a0850ab676c5c64461a05ca524cdfff59f1">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/json-simple-1.1.1_59a26b960f5e65f9555e743ba147ecd5319d83ef/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/StudioProjects/Client/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="01edfbeff11e1eeae4bbf23d56ed7dd500d7567a">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a7d0a9221195ac954be2b7157c94e606f8cb2c9b/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/StudioProjects/Client/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.3_7650e504c11984678b6b85b1fb416d24324b8d60/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/StudioProjects/Client/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.3_f4dce839ae113d68c1e221854afc7ab574934b96/classes.dex" />
+    </item>
+    <item
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="860340562250678d1a344907ac75754e259cdb14">
+        <dex dex="/home/gus/StudioProjects/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/hamcrest-core-1.1_b11c61761fd4d177465992d39503562452c4a3aa/classes.dex" />
+    </item>
+
+</items>

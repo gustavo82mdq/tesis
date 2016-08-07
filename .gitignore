@@ -12,3 +12,10 @@ appcompat_v7
 
 #maven
 target/
+
+#AStudio
+Client/app/build/
+Client/.idea/
+Client/local.properties
+Client/.gradle/
+Client/*.iml
