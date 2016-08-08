@@ -24,8 +24,9 @@ public class ClientThread extends Thread{
 		}
 	}
 
-	public void disconnect(){
+	public void disconnect(String serial){
 		this.isConnected = false;
+		this.send(new Message<Object>(Message.Type.REQ_DEVICE_DISCONNECT, null, serial));
 		try {
 			ClientThread.sleep(5000);
 			this.input.close();
