@@ -80,8 +80,14 @@ public class ConnectionManager {
 		case Type.REQ_DEVICE_DISCONNECT:
 			ClientThread c = this.client_list.get(m.getAddress());
 			if (c != null) {
-				c.disconnect();
 				this.client_list.remove(m.getAddress());
+				try {
+					c.disconnect(null);
+					c.join();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 			break;
 		}
