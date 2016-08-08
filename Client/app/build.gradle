@@ -25,5 +25,7 @@ android {
 dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
-    compile 'app.tesis:Commons:0.0.2-SNAPSHOT'
+    compile ('app.tesis:Commons:0.0.3-SNAPSHOT') {
+        changing = true
+    }
 }

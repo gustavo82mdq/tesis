@@ -62,8 +62,8 @@ public class BoundService extends Service {
 	}
 	
 	public void stop() {
-		this.client_thread.send(new Message<Object>(Message.Type.REQ_DEVICE_DISCONNECT, null, Build.SERIAL));
-		this.client_thread.disconnect();
+		//this.client_thread.send(new Message<Object>(Message.Type.REQ_DEVICE_DISCONNECT, null,));
+		this.client_thread.disconnect(Build.SERIAL);
 		this.client_thread = null;
 	}
 
