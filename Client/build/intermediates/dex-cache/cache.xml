@@ -2,74 +2,94 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/app.tesis/Commons/0.0.3-SNAPSHOT/b923522ecd8fa22b5bbba2dea9d26eed71d7e6fe/Commons-0.0.3-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b923522ecd8fa22b5bbba2dea9d26eed71d7e6fe">
+        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/Commons-0.0.3-SNAPSHOT_bd3326d98f790d6d1298ea8ae1a55541f562e577/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gus/workspace-tesis/Client/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="dfb4c6c5776ca8960abaabbfc087eb6106ba7d8e">
+        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5ef85287b9b7a84f4e02664f5b1dce6146f3fd48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/gus/workspace-tesis/Client/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.3_3fea4511bf4bbc7bb4021fe72750120703c884d8/classes.dex" />
     </item>
     <item
-        jar="/home/gus/Programas/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.3_a261bbeffb4a82955c1551011889a07be81b9a77/classes.dex" />
-    </item>
-    <item
+        is-multidex="true"
         jar="/home/gus/workspace-tesis/Client/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.3_d458a6705f8bee08b57189941d9d1b21c1d9287d/classes.dex" />
     </item>
     <item
-        jar="/home/gus/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="c9ad4a0850ab676c5c64461a05ca524cdfff59f1">
-        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/json-simple-1.1.1_59a26b960f5e65f9555e743ba147ecd5319d83ef/classes.dex" />
-    </item>
-    <item
+        is-multidex="true"
         jar="/home/gus/workspace-tesis/Client/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
         <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.3_c365b008a5fc33c9abccbe8ff1693953441174cd/classes.dex" />
     </item>
     <item
+        is-multidex="true"
         jar="/home/gus/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
         sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
         <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.10_3cc7866d7e0db31d671215b9f3e8695a61bd595c/classes.dex" />
     </item>
     <item
-        jar="/home/gus/workspace-tesis/Client/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        is-multidex="true"
+        jar="/home/gus/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
-        sha1="5f39b14e6263b0544c3cba57b4b895ae4f3b8166">
-        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5efe8663c0d6e9749374a5b3a8e11b7658536444/classes.dex" />
+        sha1="c9ad4a0850ab676c5c64461a05ca524cdfff59f1">
+        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/json-simple-1.1.1_59a26b960f5e65f9555e743ba147ecd5319d83ef/classes.dex" />
     </item>
     <item
-        jar="/home/gus/workspace-tesis/Client/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="4602bfa1853f742c2c451eb6694435b6861f2f75">
-        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5ef85287b9b7a84f4e02664f5b1dce6146f3fd48/classes.dex" />
-    </item>
-    <item
+        is-multidex="true"
         jar="/home/gus/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
         sha1="860340562250678d1a344907ac75754e259cdb14">
         <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/hamcrest-core-1.1_b11c61761fd4d177465992d39503562452c4a3aa/classes.dex" />
     </item>
     <item
-        jar="/home/gus/.gradle/caches/modules-2/files-2.1/app.tesis/Commons/0.0.3-SNAPSHOT/3dcbd6be12b0472fa714f677d17c7cb119f4649d/Commons-0.0.3-SNAPSHOT.jar"
+        is-multidex="true"
+        jar="/home/gus/workspace-tesis/Client/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
+        optimize="true"
         revision="24.0.1"
-        sha1="3dcbd6be12b0472fa714f677d17c7cb119f4649d">
-        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/Commons-0.0.3-SNAPSHOT_ad574cc2f0c75a3cbc52bec58b7d49f694a18035/classes.dex" />
+        sha1="1670f8a0e882a7ef0db6f1e41a608a9d07292370">
+        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5efe8663c0d6e9749374a5b3a8e11b7658536444/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gus/Programas/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/gus/workspace-tesis/Client/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.3_a261bbeffb4a82955c1551011889a07be81b9a77/classes.dex" />
     </item>
 
 </items>
